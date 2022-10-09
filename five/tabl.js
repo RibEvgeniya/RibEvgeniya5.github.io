@@ -36,4 +36,4 @@ function calc() {
 window.addEventListener("DOMContentLoaded", function (event) 
 {
   console.log("DOM fully loaded and parsed");
-};
+});
