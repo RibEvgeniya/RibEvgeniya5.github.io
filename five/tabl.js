@@ -20,10 +20,12 @@ function calc() {
     let b7 = form.elements.count7;
     let a8 = form.elements.price8;
     let b8 = form.elements.count8;
+    let a9 = form.elements.price9;
+    let b9 = form.elements.count9;
     let a10 = form.elements.price10;
     let b10 = form.elements.count10;
     let result = document.getElementById("result");
-    let summ = a0.value * b0.value  + a1.value * b1.value + a2.value * b2.value + a3.value * b3.value + a4.value * b4.value + a5.value * b5.value + a6.value * b6.value + a7.value * b7.value + a8.value * b8.value + a9.value * b9.value + a10.value * b10.value;
+    let summ = a0.value * b0.value + a1.value * b1.value + a2.value * b2.value + a3.value * b3.value + a4.value * b4.value + a5.value * b5.value + a6.value * b6.value + a7.value * b7.value + a8.value * b8.value + a9.value * b9.value + a10.value * b10.value;
     if(isNaN(summ)) {
         result.innerHTML = "Были введены некорректные значения!";
     }
@@ -34,4 +36,4 @@ function calc() {
 window.addEventListener("DOMContentLoaded", function (event) 
 {
   console.log("DOM fully loaded and parsed");
-});
+};
